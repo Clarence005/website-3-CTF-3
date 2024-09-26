@@ -1,22 +1,22 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Hidden Flag Challenge</title>
-    <link rel="stylesheet" href="superhidden/mycss.css" />
+    <title>Hidden Key Challenge</title>
+    <link rel="stylesheet" href="mycss.css" />
   </head>
 
   <body>
-    <h1 class="top-heading">Finally. You found me. But can you see me</h1>
-    <h3 class = "flag">Flag = CYPHERCHASE(Ransomware)</h3>
+    <h1 class="top-heading">Finally. You found me. But you can't see me!</h1>
+    <h3 class = "key" hidden>Click me! "https://github.com/sabarishh14/PassCraft/blob/main/code.txt"</h3>
     <div class="container">
       <h1>Gateway to the Next Adventure</h1>
       <form id="loginForm" onsubmit="return validateForm(event)">
           <div class="input-container">
-              <label for="key1">Flag</label>
-              <input type="text" id="key1" name="Key1" placeholder="Enter Flag" required>
+              <label for="key1"></label>
+              <input type="text" id="key1" name="Key1" placeholder="Enter Key" required>
           </div>
 
-          <button type="submit">load NextRound</button>
+          <button type="submit">Submit</button>
       </form>
 
       <div id="message" class="message"></div>
@@ -40,9 +40,9 @@
           const data = await response.json();
           
           if (response.ok && data.success) {
-            document.getElementById('message').textContent = 'Yay, You have completed this round';
+            document.getElementById('message').textContent = 'Congrats, You have captured the second key';
           } else {
-              document.getElementById('message').textContent = 'Invalid Flag!';
+              document.getElementById('message').textContent = 'Invalid Key!';
           }
       }
     </script>

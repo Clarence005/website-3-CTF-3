@@ -1,22 +1,27 @@
+
 body {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: flex-start; /* Ensures the heading stays at the top */
-  min-height: 100vh;
-  background-color: #f4f4f4;
-  margin: 0;
   font-family: Arial, sans-serif;
-  padding-top: 50px; /* Adds some space at the top */
+  background-image: url('b1.jpg'); 
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: #333;
+  /* display: flex; */
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
 }
-.flag{
+
+.key{
   background-color: white;
   color: white;
 }
 .top-heading {
   text-align: center;
+  padding-top: 50px;
   font-size: 24px;
-  color: black;
+  color: white;
   margin-bottom: 20px; /* Adds space between the heading and container */
 }
 
@@ -28,14 +33,16 @@ body {
   text-align: center;
   max-width: 400px; /* Max width for better responsiveness */
   width: 90%; /* Full width on small screens */
+  margin-left: 33%;
+  margin-top: 80px;
 }
 
 h1 {
   color: #4CAF50;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
 }
 
-.flag {
+.key {
   color: rgba(255, 255, 255, 0); /* Completely transparent text */
   background-color: rgba(255, 255, 255, 0); /* Same for background */
   position: absolute;
