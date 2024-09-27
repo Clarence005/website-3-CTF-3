@@ -40,7 +40,8 @@
           const data = await response.json();
           
           if (response.ok && data.success) {
-            document.getElementById('message').textContent = 'Congrats, You have captured the second key';
+            alert("Congrats, You have Completed the Game!");
+            document.getElementById('message').textContent = 'Congrats, You have Completed the Game!';
           } else {
               document.getElementById('message').textContent = 'Invalid Key!';
           }
